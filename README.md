@@ -12,4 +12,4 @@ where `tfplan2.json` is your Terraform plan file in JSON format.
 
 To run just the AWS_CUSTOM_LABELS1 policy in this repo on its own, try e.g.
 
-`$ checkov --external-checks-git https://github.com/monch1962/using-checkov.git --check DRAC_AWS_CUSTOM_LABELS1 -f tfplan2.json`
+`$ checkov --external-checks-git https://github.com/monch1962/using-checkov.git --check CUSTOM_DRAC_LABELS1 -f tfplan2.json`
