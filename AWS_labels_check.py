@@ -4,7 +4,7 @@ from checkov.terraform.checks.resource.base_resource_check import BaseResourceCh
 class AWSLabelsCheck(BaseResourceCheck):
   def __init__(self):
     name = "Ensure AWS assets are tagged with the mandatory set of labels"
-    id = "AWS_CUSTOM_LABELS1"
+    id = "DRAC_AWS_CUSTOM_LABELS1"
     supported_resources = ['aws_s3_bucket']
     categories = [CheckCategories.GENERAL_SECURITY]
     super().__init__(name=name, id=id, categories=categories, supported_resources=supported_resources)
