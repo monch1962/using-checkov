@@ -1,5 +1,5 @@
 # using-checkov
-Spike around creating & using custom checkov controls that are stored in their own git repo
+Spike around creating & executing custom checkov policies that are stored in their own git repo
 
 
 ## To use
