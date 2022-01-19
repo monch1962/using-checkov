@@ -33,3 +33,6 @@ To run all standard checks plus all custom checks in `my-custom-checks`:
 To run checks against all Terraform files in the `./test-infra` directory:
 
 `$ checkov -d test-infra/ --external-checks-dir my-custom-checks
+
+## References
+- writing custom checkov policies: https://www.checkov.io/3.Custom%20Policies/YAML%20Custom%20Policies.html
