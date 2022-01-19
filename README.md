@@ -4,8 +4,7 @@
 Spike around creating & executing custom checkov policies that are stored in their own git repo
 
 
-## To use (not working yet)
-
+## To use 
 To include the checkov policies contained in this repo to the standard set of checkov policies, try e.g.
 
 `$ checkov --external-checks-git https://github.com/monch1962/using-checkov.git//my-custom-checks -f tfplan2.json`
@@ -32,7 +31,7 @@ To run all standard checks plus all custom checks in `my-custom-checks`:
 
 To run checks against all Terraform files in the `./test-infra` directory:
 
-`$ checkov -d test-infra/ --external-checks-dir my-custom-checks
+`$ checkov -d test-infra/ --external-checks-dir my-custom-checks`
 
 ## References
 - writing custom checkov policies: https://www.checkov.io/3.Custom%20Policies/YAML%20Custom%20Policies.html
