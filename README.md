@@ -33,5 +33,10 @@ To run checks against all Terraform files in the `./test-infra` directory:
 
 `$ checkov -d test-infra/ --external-checks-dir my-custom-checks`
 
+To run checks and emit the results as JUnit:
+
+`$ checkov -d test-infra/ --external-checks-dir my-custom-checks --output junitxml`
+
 ## References
 - writing custom checkov policies: https://www.checkov.io/3.Custom%20Policies/YAML%20Custom%20Policies.html
+- publishing checkov results to Azure DevOps: https://adinermie.com/publishing-checkov-terraform-quality-checks-to-azure-devops-pipelines/
