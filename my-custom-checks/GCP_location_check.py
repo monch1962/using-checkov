@@ -16,7 +16,7 @@ class GCPLocationCheck(BaseResourceCheck):
     if 'location' in conf.keys():
       locations = conf['location'][0]
       for l in locations:
-        if not re.search("^(australia-southeast-1|australia-southeast-2)$", l):
+        if not re.search("^(australia-southeast-1|australia-southeast-2)", l):
           return CheckResult.FAILED
       return CheckResult.PASSED
     return CheckResult.FAILED
